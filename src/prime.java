@@ -1,14 +1,23 @@
 public class prime {
 
     public static void main(String [] args){
-        int i=9;
 
-        if(i%2==0){
-           System.out.println(i+"is a prime number ");
+    int prime =11;
+
+    boolean is =false;
+    for(int i=2;i<prime;i++){
+        if(prime%i==0){
+            is=true;
+            break;
         }
-        else {
-            System.out.println("is not prime number");
-        }
+    }
+
+    if(!is){
+      System.out.println(prime +" is a prime number ");
+    }
+    else{
+        System.out.println(prime +" is not a prime number ");
+    }
     }
 
 
